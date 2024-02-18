@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azertype</title>
+
+    <!-- lien font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>AzerType</h1>
+        <h2>L'application pour écrire plus vite !</h2>
+        <h3>Azertype est une application en ligne pour apprendre à taper plus vite au clavier</h3>
+    </header>
+
+    <main>
+        <div class ="choice__zone__global__wrapper">
+            <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champs en dessous</p>
+            <div class = choice__zone__wrapper>
+                <input type="radio" name="source_option" id="words" value ="1" checked>
+                <label for="words">Mots</label>
+                <input type="radio" name="source_option" id="sentences" value ="2">
+                <label for="sentences">Phrases</label>
+            </div>
+        </div>
+        <div class ="proposition__zone__wrapper">
+            Azerty
+        </div>
+        <div class ="entry__zone__wrapper">
+            <input type="text" id = "entry__input" name="entry_input">
+            <button class = "validation__button">Valider</button>
+        </div>
+        <div class="score__zone__wrapper">
+            Votre score : <span>0</span>
+        </div>
+        <div class="share__zone__wrapper">
+            <button>Partager</button>
+        </div>
+    </main>
+    <footer>
+        &copy; OpenClassrooms
+    </footer>
+
+    <!-- Popup de partage -->
+    <div class="popup__global__wrapper">
+        <div class="popup__wrapper">
+            <div>Partagez votre score</div>
+            <form novalidate>
+                <label for="name">Votre nom</label>
+                <input type="text" name="name" id="name" placeholder="Votre nom">
+                <label for="email">Avec qui voulez vous partager votre score ?</label>
+                <input type="email" name="email" id="email" placeholder="nom@domaine.com">
+                <button class ="form__button">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
